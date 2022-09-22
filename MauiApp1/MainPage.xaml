@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <VerticalStackLayout
+        VerticalOptions="Center" 
+        HorizontalOptions="Center">
+
+        <Label 
+        Text="Holdings"
+        FontSize="25" />
+        <Entry Placeholder="Enter holdings"
+        BackgroundColor="Gray"
+        Text="{Binding HoldingsAmount}"
+        Keyboard="Numeric" />
+
+            <Label 
+        Text="Ask price"
+        FontSize="25" />
+            <Label 
+        Text="{Binding Ticker.AskPrice}"
+        FontSize="50" />
+
+            <Label
+        Text="Bid price"
+        FontSize="25" />
+            <Label 
+        Text="{Binding Ticker.BidPrice}"
+        FontSize="50" />
+
+            <Label 
+        Text="Holdings value"
+        FontSize="25" />
+            <Label 
+        Text="{Binding Ticker.HoldingsValue}"
+        FontSize="50" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
